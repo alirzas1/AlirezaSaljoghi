@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { BrowserRouter } from "react-router-dom";
 import "./assets/css/index.css";
 import Contact from "./pages/Contact/Contact";
 import Projects from "./pages/Projects/Projects";
@@ -26,7 +27,7 @@ export default function App() {
         </>
       ) : (
         // Router Mode: Use routes for navigation
-        <Routes>`
+        <Routes>
           <Route path="/" element={<Hero />} />
           <Route path="/skills" element={<Skills />} />
           <Route path="/education" element={<Education />} />
